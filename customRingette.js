@@ -87,6 +87,8 @@ document.addEventListener('DOMContentLoaded', function () {
         activeButton(activeGrip, link, index, '', '');
     });
 
+    console.log(activeFlex);
+
     activeFlex.forEach((link, index) => {
         activeButton(activeFlex, link, index, arrFlex, '');
     });
@@ -102,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const computedStyle = window.getComputedStyle(link);
             const background = computedStyle.background;
             customizationColorScheme.style.background = background;
+            console.log(index);
             racketImg.src = `img/${arrColor[index]}.png`;
         });
     });
